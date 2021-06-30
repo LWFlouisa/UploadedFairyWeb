@@ -117,7 +117,7 @@
      
     <h4>TABLE OF CONTENTS</h4>
       
-    <img width="80%" height="100%" class="demo cursor" src="https://lwflouisa.github.io/UploadedFairyWeb/indeximage/mespereetfrancaise.png" alt="index image">
+    <img width="80%" height="100%" src="https://lwflouisa.github.io/UploadedFairyWeb/indeximage/mespereetfrancaise.png" alt="index image">
     
     <h4>PART ONE</h4>
       
@@ -125,37 +125,12 @@
     <a href="https://lwflouisa.github.io/UploadedFairyWeb/chapters/chaptertwo.html">Chapter Two</a><br />
     <a href="https://lwflouisa.github.io/UploadedFairyWeb/chapters/chapterthree.html">Chapter Three</a><br />
     <a href="https://lwflouisa.github.io/UploadedFairyWeb/chapters/chapterfour.html">Chapter Four</a><br />
+    
+    <pre>
+    
+    
+    
+    </pre>
     </center>
-
-<script>
-var slideIndex = -1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
   </body>
 </html>
